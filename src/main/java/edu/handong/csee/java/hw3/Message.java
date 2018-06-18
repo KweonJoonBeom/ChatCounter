@@ -9,11 +9,7 @@ public class Message {
 	String date, user, strMessage;
 	public Message(String date, String user, String strMessage) {
 		this.date = date;
-		/*
-		 * this.fullDataTime = "";
-		 * this.fromWhere = fromWhere;
-		 * 
-		 */
+
 		this.user = user;
 		this.strMessage = strMessage;   
 	}

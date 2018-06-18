@@ -1,15 +1,10 @@
 package edu.handong.csee.java.hw3;
 
 import java.io.IOException;
+import java.lang.StackWalker.Option;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.Options;
 /**
  * Main function just call the method and generate the each instances
  * first get in the inputpath and read all messages, count the message and store in the outputpath file
@@ -57,14 +52,14 @@ public class Main {
 		WC.createCSV(result,outputpath);
 
 		System.out.println("finish!");
-
+/*
 		for(Message m : messages.get("samer")) {
 			System.out.println(m.date+ m.user+m.strMessage);
-		}
+		}*/
 	}
 	// Definition Stage
 	private static Options createOptions() {
-		Options options = new Options();
+		Option options = new Options();
 
 		// add options by using OptionBuilder
 		options.addOption(Option.builder("i").longOpt("input")

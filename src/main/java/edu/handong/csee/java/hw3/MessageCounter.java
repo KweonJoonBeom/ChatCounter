@@ -68,14 +68,7 @@ public class MessageCounter {
 	private HashMap<String, Integer> messageCount(HashMap<String, ArrayList<Message>> messages){
 		HashMap<String, Integer> result = new HashMap<String, Integer>();
 		int count = 0;
-		/*  
-      Iterator k =messages.keySet().iterator();
-      while(k.hasNext()) {
-    	  ArrayList<Message> msge = messages.get(k);
-    	  count = msge.size();
-    	  result.put(k,count);
-      }
-		 */
+
 		for(String keyID : messages.keySet()) {
 			ArrayList<Message> msge = messages.get(keyID);
 			count = msge.size();

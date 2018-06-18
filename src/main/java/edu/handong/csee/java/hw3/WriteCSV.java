@@ -14,12 +14,10 @@ import java.util.ArrayList;
  *
  */
 public class WriteCSV{
+	
 	public void createCSV(ArrayList<String> result,String outputpath){
 
 		try{
-			//PrintWriter pw = new PrintWriter(new OutputStreamWriter(out, "UTF-8"));
-			//CSVWriter cw = new CSVWriter(new FileWriterWithEncoding(fileName,"euc-kr"),  ',');
-			//BufferedWriter fw = new BufferedWriter(new FileWriter("C:\\Users\\imsuj\\Desktop\\out.csv", true));
 			FileOutputStream fileOutputStream = new FileOutputStream(outputpath);
 			OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, "MS949");
 			BufferedWriter fw = new BufferedWriter(outputStreamWriter);
